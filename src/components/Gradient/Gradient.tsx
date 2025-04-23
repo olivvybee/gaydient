@@ -31,19 +31,23 @@ export const Gradient = ({ name, colours }: GradientProps) => {
 
   const directionString = direction ? `${direction}, ` : '';
 
-  const gradient = hardStops
+  const stops = hardStops
     ? generateGradientWithHardStops(colours)
     : generateGradient(colours);
 
-  const background = `${type}-gradient(${directionString}${gradient})`;
+  const gradient = `${type}-gradient(${directionString}${stops})`;
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(gradient);
+  };
 
   return (
-    <button className={styles.card}>
+    <button className={styles.card} onClick={copyToClipboard}>
       <h2 className={styles.name}>{name}</h2>
       <div
         className={styles.gradient}
         style={{
-          background,
+          background: gradient,
         }}
       />
     </button>
