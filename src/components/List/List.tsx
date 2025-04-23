@@ -4,9 +4,11 @@ import { Gradient } from '../Gradient';
 import styles from './List.module.css';
 
 export const List = () => (
-  <div className={styles.list}>
+  <ul className={styles.list} role="list">
     {gradients.map(({ name, colours }) => (
-      <Gradient key={name} name={name} colours={colours} />
+      <li key={name}>
+        <Gradient name={name} colours={colours} />
+      </li>
     ))}
-  </div>
+  </ul>
 );
