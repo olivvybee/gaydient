@@ -5,8 +5,8 @@ export const generateGradientWithHardStops = (colours: string[]) => {
   const chunkSize = 100 / colours.length;
   return colours
     .flatMap((colour, index) => [
-      `#${colour} ${index * chunkSize}%`,
-      `#${colour} ${(index + 1) * chunkSize}%`,
+      `#${colour} ${Math.round(index * chunkSize)}%`,
+      `#${colour} ${Math.round((index + 1) * chunkSize)}%`,
     ])
     .join(', ');
 };
