@@ -1,11 +1,11 @@
-import './App.css';
 import { ConfigPanel } from './components/ConfigPanel/ConfigPanel';
 import { List } from './components/List';
 
-const App = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
-    <ConfigPanel />
+import styles from './App.module.css';
 
+const App = () => (
+  <div className={styles.wrapper}>
+    <ConfigPanel />
     <List />
   </div>
 );
