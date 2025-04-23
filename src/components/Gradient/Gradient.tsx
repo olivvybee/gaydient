@@ -38,7 +38,7 @@ export const Gradient = ({ name, colours }: GradientProps) => {
   const background = `${type}-gradient(${directionString}${gradient})`;
 
   return (
-    <div className={styles.card}>
+    <button className={styles.card}>
       <h2 className={styles.name}>{name}</h2>
       <div
         className={styles.gradient}
@@ -46,6 +46,6 @@ export const Gradient = ({ name, colours }: GradientProps) => {
           background,
         }}
       />
-    </div>
+    </button>
   );
 };
