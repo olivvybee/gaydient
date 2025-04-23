@@ -1,0 +1,30 @@
+.configPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  background-color: #eeeeee;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.formElement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .configPanel {
+    background-color: #444444;
+  }
+}

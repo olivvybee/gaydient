@@ -1,5 +1,8 @@
 import { GradientType, useConfigStore } from '../../store/ConfigStore';
+
 import { getDirectionOptions } from './ConfigPanel.utils';
+
+import styles from './ConfigPanel.module.css';
 
 export const ConfigPanel = () => {
   const config = useConfigStore();
@@ -13,31 +16,39 @@ export const ConfigPanel = () => {
     config.setDirection(newDirectionOptions[0]?.value || '');
   };
 
-  console.log(config);
-
   return (
-    <form>
-      <select
-        value={config.type}
-        onChange={(e) => setType(e.target.value as GradientType)}>
-        <option value="linear">Linear</option>
-        <option value="radial">Radial</option>
-        <option value="conic">Conic</option>
-      </select>
+    <form className={styles.configPanel}>
+      <h2 className={styles.heading}>Settings</h2>
+
+      <div className={styles.formElement}>
+        <label htmlFor="type">Gradient type</label>
+        <select
+          id="type"
+          value={config.type}
+          onChange={(e) => setType(e.target.value as GradientType)}>
+          <option value="linear">Linear</option>
+          <option value="radial">Radial</option>
+          <option value="conic">Conic</option>
+        </select>
+      </div>
 
       {!!directionOptions.length && (
-        <select
-          value={config.direction}
-          onChange={(e) => config.setDirection(e.target.value)}>
-          {directionOptions.map(({ label, value }) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select>
+        <div className={styles.formElement}>
+          <label htmlFor="direction">Direction</label>
+          <select
+            id="direction"
+            value={config.direction}
+            onChange={(e) => config.setDirection(e.target.value)}>
+            {directionOptions.map(({ label, value }) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </div>
       )}
 
-      <label htmlFor="reverse">
+      <label className={styles.formElement} htmlFor="reverse">
         <input
           type="checkbox"
           id="reverse"
@@ -47,7 +58,7 @@ export const ConfigPanel = () => {
         Reverse
       </label>
 
-      <label htmlFor="hard-stops">
+      <label className={styles.formElement} htmlFor="hard-stops">
         <input
           type="checkbox"
           id="hard-stops"
@@ -57,7 +68,7 @@ export const ConfigPanel = () => {
         Hard stops
       </label>
 
-      <label htmlFor="symmetry">
+      <label className={styles.formElement} htmlFor="symmetry">
         <input
           type="checkbox"
           id="symmetry"
