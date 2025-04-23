@@ -1,8 +1,11 @@
 import { useConfigStore } from '../../store/ConfigStore';
+
 import {
   generateGradient,
   generateGradientWithHardStops,
 } from './Gradient.utils';
+
+import styles from './Gradient.module.css';
 
 interface GradientProps {
   name: string;
@@ -35,9 +38,10 @@ export const Gradient = ({ name, colours }: GradientProps) => {
   const background = `${type}-gradient(${directionString}${gradient})`;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-      <h2>{name}</h2>
+    <div className={styles.card}>
+      <h2 className={styles.name}>{name}</h2>
       <div
+        className={styles.gradient}
         style={{
           background,
           // width: 300,

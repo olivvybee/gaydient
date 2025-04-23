@@ -1,0 +1,22 @@
+.card {
+  background-color: white;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  border: 1px solid #444444;
+}
+
+.name {
+  margin: 8px 0;
+}
+
+.gradient {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #444444;
+    border: 1px solid #eeeeee;
+  }
+}
