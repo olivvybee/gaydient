@@ -23,7 +23,7 @@ export const useConfigStore = create<Config>((set) => ({
   type: 'linear',
   setType: (type) => set({ type }),
 
-  direction: '90deg',
+  direction: '180deg',
   setDirection: (direction) => set({ direction }),
 
   reverse: false,

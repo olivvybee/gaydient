@@ -4,8 +4,8 @@ export const getDirectionOptions = (type: GradientType) => {
   switch (type) {
     case 'linear':
       return [
-        { label: 'Horizontal', value: '90deg' },
         { label: 'Vertical', value: '180deg' },
+        { label: 'Horizontal', value: '90deg' },
         { label: 'Diagonal (top to bottom)', value: '135deg' },
         { label: 'Diagonal (bottom to top)', value: '45deg' },
       ];
