@@ -1,5 +1,10 @@
 .wrapper {
   width: 100%;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 32px;
@@ -9,8 +14,33 @@
   gap: 48px;
 }
 
+.title {
+  margin: 0;
+}
+
+.footer {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+.footerContent {
+  padding: 12px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
 @media screen and (max-width: 600px) {
   .wrapper {
     padding: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #444444;
   }
 }
