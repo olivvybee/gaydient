@@ -32,6 +32,6 @@ export const useConfigStore = create<Config>((set) => ({
   hardStops: true,
   setHardStops: (hardStops) => set({ hardStops }),
 
-  symmetry: false,
+  symmetry: true,
   setSymmetry: (symmetry) => set({ symmetry }),
 }));

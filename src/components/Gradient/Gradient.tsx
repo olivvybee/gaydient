@@ -17,7 +17,6 @@ export const Gradient = ({ name, colours }: GradientProps) => {
   const symmetry = useConfigStore((state) => state.symmetry);
 
   const isSymmetrical = colours.at(0) === colours.at(-1);
-  console.log({ colours, isSymmetrical });
 
   if (isSymmetrical && !symmetry) {
     colours = colours.slice(0, Math.ceil(colours.length / 2));
@@ -27,11 +26,13 @@ export const Gradient = ({ name, colours }: GradientProps) => {
     colours = colours.toReversed();
   }
 
+  const directionString = direction ? `${direction}, ` : '';
+
   const gradient = hardStops
     ? generateGradientWithHardStops(colours)
     : generateGradient(colours);
 
-  const background = `${type}-gradient(${gradient})`;
+  const background = `${type}-gradient(${directionString}${gradient})`;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
