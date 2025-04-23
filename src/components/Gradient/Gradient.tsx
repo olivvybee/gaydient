@@ -44,8 +44,6 @@ export const Gradient = ({ name, colours }: GradientProps) => {
         className={styles.gradient}
         style={{
           background,
-          // width: 300,
-          height: 100,
         }}
       />
     </div>

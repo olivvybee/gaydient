@@ -2,6 +2,12 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 32px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    padding: 16px;
+  }
 }
