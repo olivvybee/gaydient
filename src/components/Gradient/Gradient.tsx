@@ -40,7 +40,7 @@ export const Gradient = ({ name, colours }: GradientProps) => {
       <div
         style={{
           background,
-          width: 300,
+          // width: 300,
           height: 100,
         }}
       />
