@@ -1,26 +1,37 @@
 import { create } from 'zustand';
 
+export type GradientType = 'linear' | 'radial' | 'conic';
+
 interface Config {
-  type: 'linear' | 'radial' | 'conic';
+  type: GradientType;
+  setType: (type: GradientType) => void;
+
   direction: string;
+  setDirection: (direction: string) => void;
+
   reverse: boolean;
+  setReverse: (reverse: boolean) => void;
+
   hardStops: boolean;
+  setHardStops: (hardStops: boolean) => void;
+
   symmetry: boolean;
+  setSymmetry: (symmetry: boolean) => void;
 }
 
 export const useConfigStore = create<Config>((set) => ({
   type: 'linear',
-  setType: (type: Config['type']) => set({ type }),
+  setType: (type) => set({ type }),
 
   direction: '90deg',
-  setDirection: (direction: string) => set({ direction }),
+  setDirection: (direction) => set({ direction }),
 
   reverse: false,
-  setReverse: (reverse: boolean) => set({ reverse }),
+  setReverse: (reverse) => set({ reverse }),
 
   hardStops: true,
-  setHardStops: (hardStops: boolean) => set({ hardStops }),
+  setHardStops: (hardStops) => set({ hardStops }),
 
   symmetry: false,
-  setSymmetry: (symmetry: boolean) => set({ symmetry }),
+  setSymmetry: (symmetry) => set({ symmetry }),
 }));

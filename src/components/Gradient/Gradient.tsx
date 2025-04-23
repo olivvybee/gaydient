@@ -31,7 +31,7 @@ export const Gradient = ({ name, colours }: GradientProps) => {
     ? generateGradientWithHardStops(colours)
     : generateGradient(colours);
 
-  const background = `${type}-gradient(${direction}, ${gradient})`;
+  const background = `${type}-gradient(${gradient})`;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
