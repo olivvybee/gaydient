@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Gaydient
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app for customising and copying the code for pride flag CSS
+gradients.
 
-Currently, two official plugins are available:
+## Contributing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pull requests are very welcome! Feel free to add new flags or make improvements
+in general.
 
-## Expanding the ESLint configuration
+### Adding new flags
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Flags are stored in
+[`src/data/gradients.json`](https://github.com/olivvybee/gaydient/blob/main/src/data/gradients.json)
+as an array of objects containing a name and an array of hex codes. Add new ones
+by adding new elements to the array.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Running locally
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This is a React app that uses `pnpm` for dependencies. Run `pnpm install` to
+install the dependencies, then use `pnpm dev` to run the app.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+It's a plain React app on top of Vite. CSS modules are used for styles. It's
+literally a single page app, so there's no routing framework necessary.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+The settings panel is handled using `zustand` (it's essentially a React context
+that doesn't require a context provider).
