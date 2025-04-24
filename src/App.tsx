@@ -7,6 +7,10 @@ const App = () => (
   <div className={styles.wrapper}>
     <div className={styles.content}>
       <h1 className={styles.title}>Gaydient</h1>
+      <p className={styles.description}>
+        Customise the gradients and then click one to copy its code to your
+        clipboard!
+      </p>
       <ConfigPanel />
       <List />
     </div>
