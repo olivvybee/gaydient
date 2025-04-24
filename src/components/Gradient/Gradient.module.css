@@ -9,6 +9,7 @@
   display: block;
   width: 100%;
   transition: background-color 250ms ease-out;
+  color: inherit;
 }
 
 .card:hover,
