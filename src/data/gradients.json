@@ -45,6 +45,10 @@
     "colours": ["000000", "BCC4C7", "FFFFFF", "B7F684"]
   },
   {
+    "name": "Genderqueer",
+    "colours": ["b57edc", "ffffff", "4a8123"]
+  },
+  {
     "name": "Demigirl",
     "colours": [
       "7F7F7F",
