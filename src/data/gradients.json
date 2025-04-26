@@ -4,6 +4,14 @@
     "colours": ["E40303", "FF8C00", "FFED00", "008026", "24408E", "732982"]
   },
   {
+    "name": "Gilbert Baker",
+    "colours": ["FF69B4", "E40303", "FF8C00", "FFED00", "008E00", "00C0C0", "400098", "8E008E"]
+  },
+  {
+    "name": "Baker 2017",
+    "colours": ["CD66FF", "FF69B4", "E40303", "FF8C00", "FFED00", "008E00", "00C0C0", "400098", "8E008E"]
+  },
+  {
     "name": "Philadelphia",
     "colours": [
       "000000",
