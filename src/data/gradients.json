@@ -42,7 +42,15 @@
   },
   {
     "name": "Agender",
-    "colours": ["000000", "BCC4C7", "FFFFFF", "B7F684", "FFFFFF", "BCC4C7", "000000"]
+    "colours": [
+      "000000",
+      "BCC4C7",
+      "FFFFFF",
+      "B7F684",
+      "FFFFFF",
+      "BCC4C7",
+      "000000"
+    ]
   },
   {
     "name": "Genderqueer",
