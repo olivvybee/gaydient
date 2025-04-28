@@ -25,7 +25,8 @@ export const ConfigPanel = () => {
         <select
           id="type"
           value={config.type}
-          onChange={(e) => setType(e.target.value as GradientType)}>
+          onChange={(e) => setType(e.target.value as GradientType)}
+        >
           <option value="linear">Linear</option>
           <option value="radial">Radial</option>
           <option value="conic">Conic</option>
@@ -38,7 +39,8 @@ export const ConfigPanel = () => {
           <select
             id="direction"
             value={config.direction}
-            onChange={(e) => config.setDirection(e.target.value)}>
+            onChange={(e) => config.setDirection(e.target.value)}
+          >
             {directionOptions.map(({ label, value }) => (
               <option key={value} value={value}>
                 {label}
