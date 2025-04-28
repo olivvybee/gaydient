@@ -25,3 +25,11 @@ literally a single page app, so there's no routing framework necessary.
 
 The settings panel is handled using `zustand` (it's essentially a React context
 that doesn't require a context provider).
+
+### Linting and formatting
+
+This project uses `eslint` for linting and `prettier` for code formatting. Run
+`pnpm lint` and `pnpm prettier:check` to verify your changes. If the prettier
+check fails, run `pnpm prettier:format` to format the code.
+
+Both of these things will run on PRs to ensure the code style is met.
