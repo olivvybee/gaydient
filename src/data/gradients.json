@@ -154,5 +154,162 @@
   {
     "name": "Aromantic",
     "colours": ["3DA542", "A7D379", "FFFFFF", "A9A9A9", "000000"]
+  },
+  {
+    "name": "Greysexual",
+    "colours": ["740194", "aeb1aa", "ffffff", "aeb1aa", "740194"]
+  },
+  {
+    "name": "Black Trans",
+    "colours": ["5bcefa", "f5a9b8", "000000", "f5a9b8", "5bcefa"]
+  },
+  {
+    "name": "Trigender",
+    "colours": ["ff95c5", "9581ff", "67d966", "9581ff", "ff95c5"]
+  },
+  {
+    "name": "Genderfaun",
+    "colours": [
+      "fcd689",
+      "fff09b",
+      "faf9cd",
+      "ffffff",
+      "8eded9",
+      "8cacde",
+      "9782ec"
+    ]
+  },
+  {
+    "name": "Polygender",
+    "colours": ["000000", "939393", "ed94c5", "f5ed81", "64bbe6"]
+  },
+  {
+    "name": "Multisexual",
+    "colours": ["7e55c7", "ffffff", "9bdbe8", "f14e98"]
+  },
+  {
+    "name": "Biromantic",
+    "colours": ["d70170", "e55aa2", "734f95", "a48cba", "0038a7", "597dc6"]
+  },
+  {
+    "name": "Demisexual",
+    "colours": ["ffffff", "000000", "6e0070", "d2d2d2"]
+  },
+  {
+    "name": "Genderfae",
+    "colours": [
+      "97c3a5",
+      "c3deae",
+      "f9facd",
+      "ffffff",
+      "fca2c4",
+      "db8ae4",
+      "a97edd"
+    ]
+  },
+  {
+    "name": "Genderflux",
+    "colours": ["f57694", "f2a3b9", "cfcfcf", "7be1f5", "3ecdfa", "fff48c"]
+  },
+  {
+    "name": "Pangender",
+    "colours": ["fff798", "ffddcd", "ffebfb", "ffffff"]
+  },
+  {
+    "name": "Genderfloren",
+    "colours": [
+      "54c2bd",
+      "aedeb2",
+      "f9face",
+      "ffffff",
+      "f9face",
+      "f3d09f",
+      "fba78a"
+    ]
+  },
+  {
+    "name": "Neptunic",
+    "colours": ["039bba", "3ad5c8", "74e9d4", "a1e6ef", "99b0ea", "9799ef"]
+  },
+
+  {
+    "name": "Multigender",
+    "colours": ["3f47cd", "00a3e8", "fa7f27", "00a3e8", "3f47cd"]
+  },
+
+  {
+    "name": "Bigender",
+    "colours": [
+      "c479a2",
+      "eda5cd",
+      "d6c7e8",
+      "ffffff",
+      "d6c7e8",
+      "9ac7e8",
+      "6d82d1"
+    ]
+  },
+
+  {
+    "name": "Boyflux",
+    "colours": [
+      "d8e9f8",
+      "6eacf5",
+      "033570",
+      "9fedac",
+      "033570",
+      "6eacf5",
+      "d8e9f8"
+    ]
+  },
+
+  {
+    "name": "Demiromantic",
+    "colours": ["ffffff", "000000", "339933", "d2d2d2"]
+  },
+  {
+    "name": "Queerplatonic",
+    "colours": [
+      "f89fc9",
+      "2e2826",
+      "7e7e7e",
+      "ffffff",
+      "7e7e7e",
+      "2e2826",
+      "f89fc9"
+    ]
+  },
+
+  {
+    "name": "Queer",
+    "colours": [
+      "ff0000",
+      "ff8e00",
+      "ffff00",
+      "008e00",
+      "00c0c0",
+      "400098",
+      "8e008e"
+    ]
+  },
+
+  {
+    "name": "Omnisexual",
+    "colours": ["fe9ace", "ff53bf", "200044", "6760fe", "8ea6ff"]
+  },
+
+  {
+    "name": "Polysexual",
+    "colours": ["f714ba", "01d66a", "1594f6"]
+  },
+
+  {
+    "name": "Aroace",
+    "colours": ["e28c00", "eccd00", "ffffff", "62aedc", "203856"]
+  },
+
+  {
+    "name": "Abrosexual",
+    "colours": ["65c286", "b4e4cc", "ffffff", "e796b7", "d9446e"]
   }
 ]
